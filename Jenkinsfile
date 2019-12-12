@@ -30,7 +30,7 @@ private def countResults(){
     def pass = 0
 
     try {
-
+         sh 'echo 111'
        // dir("${dirOfSuite}"){
             //def files = findFiles(glob: '*.xml')
            //if (files != null){
