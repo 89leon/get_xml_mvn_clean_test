@@ -40,6 +40,9 @@ private def countResults(){
                 if (results != null){
                     println "asd"
                 }
+                else {
+                    println "its null"
+                }
           //  }
       //  }
 
