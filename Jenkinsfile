@@ -39,9 +39,11 @@ private def countResults(){
                 def results = new XmlSlurper().parseText('testng-results.xml')
                 if (results != null){
                     println "asd"
+                    sh 'echo 123'
                 }
                 else {
                     println "its null"
+                    sh 'echo 456'
                 }
           //  }
       //  }
