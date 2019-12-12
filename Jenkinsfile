@@ -50,11 +50,11 @@ private def countResults(){
                 }
           //  }
       //  }
-
+sh 'echo 3'
     } catch (Exception e){
 
     }
 
-
+sh 'echo 4'
 
 }
