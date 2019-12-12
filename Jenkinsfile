@@ -15,6 +15,7 @@ node {
 
 
        '''
+        countResults()
     }
     stage('Test') {
         echo 'Testing....'
@@ -22,7 +23,7 @@ node {
   
 }
 
-private def countResults(String dirOfSuite, def resultMap){
+private def countResults(){
     def total = 0
     def failures = 0
     def skipped = 0
