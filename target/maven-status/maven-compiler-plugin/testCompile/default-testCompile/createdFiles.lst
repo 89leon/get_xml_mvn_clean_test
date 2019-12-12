@@ -1,0 +1,6 @@
+unit/LeonTest.class
+unit/FirstTestNGTest.class
+baseclasses/UnitTestBaseClass.class
+api/WebServiceTestWithSetup.class
+baseclasses/WebServiceBaseClass.class
+api/WebServiceTestSoftAssert.class

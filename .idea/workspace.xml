@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d6f59e4-8b4f-4183-a98c-e96694b5853c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UQpExTBzw58vHoyUhMrzh0jur8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="TestNG.WebServiceTestSoftAssert">
+    <configuration name="FirstTestNGTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTestNGTest.getNonExistingUserReturnsNull" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
+      <option name="METHOD_NAME" value="getNonExistingUserReturnsNull" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceTestSoftAssert" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.WebServiceTestSoftAssert" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceTestSoftAssert.hardAssertStopsImmediately" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.WebServiceTestSoftAssert" />
+      <option name="METHOD_NAME" value="hardAssertStopsImmediately" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceTestSoftAssert.softAssertContinuesToTheEnd" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.WebServiceTestSoftAssert" />
+      <option name="METHOD_NAME" value="softAssertContinuesToTheEnd" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.WebServiceTestSoftAssert" />
+        <item itemvalue="TestNG.WebServiceTestSoftAssert.softAssertContinuesToTheEnd" />
+        <item itemvalue="TestNG.WebServiceTestSoftAssert.hardAssertStopsImmediately" />
+        <item itemvalue="TestNG.FirstTestNGTest" />
+        <item itemvalue="TestNG.FirstTestNGTest.getNonExistingUserReturnsNull" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d6f59e4-8b4f-4183-a98c-e96694b5853c" name="Default Changelist" comment="" />
+      <created>1575298566254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575298566254</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="125" y="214" width="800" height="677" key="#Notifications" timestamp="1575300280625">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="125" y="214" width="800" height="677" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1575300280625" />
+    <state x="198" y="216" width="717" height="589" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575362646312">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="198" y="216" width="717" height="589" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575362646312" />
+    <state width="871" height="278" key="GridCell.Tab.0.bottom" timestamp="1575362976096">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="871" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1575362976096" />
+    <state width="871" height="278" key="GridCell.Tab.0.center" timestamp="1575362976096">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="871" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1575362976096" />
+    <state width="871" height="278" key="GridCell.Tab.0.left" timestamp="1575362976096">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="871" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1575362976096" />
+    <state width="871" height="278" key="GridCell.Tab.0.right" timestamp="1575362976096">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="871" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1575362976096" />
+    <state x="319" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1575359988588">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="319" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575359988588" />
+    <state x="309" y="245" width="432" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575360200567">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="309" y="245" width="432" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1575360200567" />
+    <state x="996" y="227" width="869" height="792" key="find.popup" timestamp="1575361343502">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="996" y="227" width="869" height="792" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1575361343502" />
+  </component>
+</project>
