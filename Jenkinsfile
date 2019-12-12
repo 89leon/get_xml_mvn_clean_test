@@ -39,18 +39,10 @@ private def countResults(){
                 sh 'echo 2'
                 def results = new XmlSlurper().parseText('<root><one a1="uno!"/><two>Some text!</two></root>')
                  sh 'echo 3'
-                sh 'echo "${results}"'
-                if (results != null){
-                    println "asd"
-                    sh 'echo 123'
-                }
-                else {
-                    println "its null"
-                    sh 'echo 456'
-                }
-          //  }
-      //  }
-sh 'echo 3'
+            
+               
+
+
     } catch (Exception e){
             println "error" + e
     }
