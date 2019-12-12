@@ -36,7 +36,7 @@ private def countResults(String dirOfSuite, def resultMap){
                 def fileName = files[0].toString()
                 def xmlFile = readFile fileName
                 def results = new XmlSlurper().parseText(xmlFile)
-          //  }
+            }
         }
 
     } catch (Exception e){
