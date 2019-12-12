@@ -56,5 +56,5 @@ sh 'echo 3'
     }
 
 sh 'echo 4'
-
+return "asd"
 }
