@@ -30,13 +30,15 @@ private def countResults(){
     def pass = 0
 
     try {
-         sh 'echo 111'
+         sh 'echo 1'
        // dir("${dirOfSuite}"){
             //def files = findFiles(glob: '*.xml')
            //if (files != null){
                 //def fileName = files[0].toString()
                // def xmlFile = readFile fileName
+                sh 'echo 2'
                 def results = new XmlSlurper().parseText('testng-results.xml')
+                 sh 'echo 3'
                 sh 'echo "${results}"'
                 if (results != null){
                     println "asd"
