@@ -8,6 +8,9 @@ node {
             ls
             cd ./get_xml_mvn_clean_test
             mvn clean test
+            ls
+            cd target/surefire-reports
+
 
 
 
@@ -29,7 +32,10 @@ private def countResults(String dirOfSuite, def resultMap){
 
         dir("${dirOfSuite}"){
             def files = findFiles(glob: '*.xml')
-            
+            if (files != null){
+                def fileName = files[0].toString()
+                def xmlFile = readFile fileNamedef results = new XmlSlurper().parseText(xmlFile)
+            }
         }
 
     } catch (Exception e){

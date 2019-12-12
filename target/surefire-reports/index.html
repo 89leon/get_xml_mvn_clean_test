@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="unit.LeonTest" class="method navigator-link" hash-for-method="cTest1">cTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -137,6 +151,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">unit.LeonTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cTest1">
+                  </a> <!-- cTest1 -->
+                  <span class="method-name">cTest1</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at unit.LeonTest.cTest1(LeonTest.java:17)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -240,32 +273,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'aTest1')
 data.setCell(0, 2, 'unit.LeonTest')
-data.setCell(0, 3, 2);
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getExistingUserReturnsExistingSavedUser')
-data.setCell(1, 2, 'unit.FirstTestNGTest')
+data.setCell(1, 1, 'cTest1')
+data.setCell(1, 2, 'unit.LeonTest')
 data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getNonExistingUserReturnsNull')
+data.setCell(2, 1, 'successfulAddUserReturnsTrue')
 data.setCell(2, 2, 'unit.FirstTestNGTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'successfulAddUserReturnsTrue')
-data.setCell(3, 2, 'unit.FirstTestNGTest')
+data.setCell(3, 1, 'bTest1')
+data.setCell(3, 2, 'unit.LeonTest')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'bTest1')
-data.setCell(4, 2, 'unit.LeonTest')
+data.setCell(4, 1, 'getNonExistingUserReturnsNull')
+data.setCell(4, 2, 'unit.FirstTestNGTest')
 data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getExistingUserReturnsExistingSavedUser')
+data.setCell(5, 2, 'unit.FirstTestNGTest')
+data.setCell(5, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 2 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -301,50 +338,56 @@ return data;
               <div class="chronological-class-name">unit.LeonTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">aTest1</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">bTest1</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cTest1</span>
+                <span class="method-start">18 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">unit.FirstTestNGTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">globalBeforeMethodSetup</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">customLocalSetupMethod</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getExistingUserReturnsExistingSavedUser</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">globalBeforeMethodSetup</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">customLocalSetupMethod</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getNonExistingUserReturnsNull</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">globalBeforeMethodSetup</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">customLocalSetupMethod</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">successfulAddUserReturnsTrue</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,6 @@
 package unit;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 @Test
 public class LeonTest {
@@ -10,5 +11,9 @@ public class LeonTest {
 
     public void bTest1(){
         System.out.println("This is test 2");
+    }
+    public void cTest1(){
+        System.out.println("This is test 3");
+        Assert.fail();
     }
 }
