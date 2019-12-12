@@ -1,13 +1,13 @@
 node {
     stage('Build') {
        sh '''
-            
+            cleanWs()
             git clone 'https://github.com/89leon/get_xml_mvn_clean_test.git'
             pwd
             ls
             cd ./get_xml_mvn_clean_test
             mvn clean test
-           
+
 
 
        '''
