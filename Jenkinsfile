@@ -30,15 +30,9 @@ private def countResults(){
     def pass = 0
 
     try {
-         sh 'echo 1'
-       // dir("${dirOfSuite}"){
-            //def files = findFiles(glob: '*.xml')
-           //if (files != null){
-                //def fileName = files[0].toString()
-               // def xmlFile = readFile fileName
-                sh 'echo 2'
-                def results = new XmlSlurper().parseText('<root><one a1="uno!"/><two>Some text!</two></root>')
-                 sh 'echo 3'
+        sh 'echo 1'
+        def results = new XmlSlurper().parseText('<root><one a1="uno!"/><two>Some text!</two></root>')
+        sh 'echo 2'
             
                
 
