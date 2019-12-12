@@ -17,5 +17,6 @@ public class LeonTest {
         SoftAssert sa = new SoftAssert();
         System.out.println("This is test 3");
         sa.fail();
+        sa.assertAll();
     }
 }
