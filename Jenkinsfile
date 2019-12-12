@@ -22,7 +22,7 @@ node {
     }
   
 }
-
+@NonCPS
 private def countResults(){
     def total = 0
     def failures = 0
