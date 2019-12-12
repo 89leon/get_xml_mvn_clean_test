@@ -30,9 +30,9 @@ private def countResults(){
     def pass = 0
 
     try {
-        sh 'echo 1'
-        def results = new XmlSlurper().parseText('<root><one a1="uno!"/><two>Some text!</two></root>')
-        sh 'echo 2'
+     
+        
+       def rootNode = new XmlSlurper().parseText('<root><one a1="uno!"/><two>Some text!</two></root>')
             
                
 
