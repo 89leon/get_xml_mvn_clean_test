@@ -2,7 +2,7 @@ node {
     stage('Build') {
        sh '''
             
-            git  'https://github.com/89leon/get_xml_mvn_clean_test.git'
+            git clone 'https://github.com/89leon/get_xml_mvn_clean_test.git'
             pwd
             mvn clean test
            
