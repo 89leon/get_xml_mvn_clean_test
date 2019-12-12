@@ -37,6 +37,7 @@ private def countResults(){
                 //def fileName = files[0].toString()
                // def xmlFile = readFile fileName
                 def results = new XmlSlurper().parseText('testng-results.xml')
+                echo "${results}"
                 if (results != null){
                     println "asd"
                     sh 'echo 123'
