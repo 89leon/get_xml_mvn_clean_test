@@ -11,4 +11,25 @@ node {
         echo 'Testing....'
     }
   
-}git 
+}
+
+private def countResults(String dirOfSuite, def resultMap){
+    def total = 0
+    def failures = 0
+    def skipped = 0
+    def pass = 0
+
+    try {
+
+        dir("${dirOfSuite}"){
+            def files = findFiles(glob: '*.xml')
+            
+        }
+
+    } catch (Exception e){
+
+    }
+
+
+
+}
