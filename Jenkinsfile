@@ -32,12 +32,12 @@ private def countResults(){
     try {
 
        // dir("${dirOfSuite}"){
-            def files = findFiles(glob: '*.xml')
-            if (files != null){
-                def fileName = files[0].toString()
-                def xmlFile = readFile fileName
-                def results = new XmlSlurper().parseText(xmlFile)
-            }
+            //def files = findFiles(glob: '*.xml')
+           //if (files != null){
+                //def fileName = files[0].toString()
+               // def xmlFile = readFile fileName
+                def results = new XmlSlurper().parseText('testng-results.xml')
+          //  }
       //  }
 
     } catch (Exception e){
