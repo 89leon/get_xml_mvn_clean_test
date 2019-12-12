@@ -52,7 +52,7 @@ private def countResults(){
       //  }
 sh 'echo 3'
     } catch (Exception e){
-
+            println "error" + e
     }
 
 sh 'echo 4'
