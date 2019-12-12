@@ -42,6 +42,6 @@ private def countResults(){
             println "error" + e
     }
 
-sh 'echo 4 ${skipped}'
+sh "echo 4 ${skipped}"
 return "asd"
 }
