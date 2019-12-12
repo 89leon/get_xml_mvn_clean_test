@@ -10,7 +10,7 @@ node {
             mvn clean test
             ls
             cd target/surefire-reports
-
+            ls
 
 
 
