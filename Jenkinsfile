@@ -34,7 +34,7 @@ private def countResults(){
         
        def rootNode = new XmlSlurper().parseText('<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0"></testng-results>')
             skipped = rootNode.attributes().skipped.toInteger()
-            println skipped
+            
                
 
 
@@ -42,6 +42,6 @@ private def countResults(){
             println "error" + e
     }
 
-sh 'echo 4'
+sh 'echo 4 ${skipped}'
 return "asd"
 }
