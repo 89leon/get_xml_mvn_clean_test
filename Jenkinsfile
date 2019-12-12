@@ -32,7 +32,7 @@ private def countResults(){
     try {
      
         
-       def rootNode = new XmlSlurper().parseText('<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">')
+       def rootNode = new XmlSlurper().parseText('<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0"></testng-results>')
             skipped = rootNode.attributes().skipped.toInteger()
             println skipped
                
